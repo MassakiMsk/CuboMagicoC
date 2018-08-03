@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1533263215 source:c:\projetos\c\cubomagico\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+

@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-//#include <windows.h>
 
 void textcolor (int cor);
 void zerar(int faces[6][3][3]);
@@ -29,12 +28,11 @@ int main() {
     char op;
 
     zerar(faces);
-    //embaralhar(faces, 10);
+    embaralhar(faces, 10);
 
     sair = 1;
     do {
-        //system("cls");
-        system("clear");
+        printf("\033[H\033[J");
         printf("\n");
         imprimir(faces);
         printf("\n");
@@ -42,7 +40,6 @@ int main() {
         scanf("%c%*c", &op);
         sair = movimento(faces, op);
         usleep(300000);
-        //Sleep(300);
     } while(sair == 1);
 
     return 0;

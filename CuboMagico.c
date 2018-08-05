@@ -42,7 +42,7 @@
         system("cls");\
     })
 
-#elif _linux_
+#elif __linux__
     #define textcolor(cor) ({\
         switch(cor) {\
             case 0:\
